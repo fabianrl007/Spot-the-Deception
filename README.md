@@ -51,6 +51,8 @@ This quantitative evidence demonstrates a deliberate communication strategy. The
 
 A word cloud generated from these same communications would visually confirm this focus, with terms like "Tax," "Cuts," "American," and "Family" dominating the landscape, providing an immediate, intuitive summary of the messaging's primary themes.
 
+![Word Cloud of Proponent Rhetoric](WordCloud.png)
+
 ### **1.3 The "No Tax On..." Strategy: Deconstructing the Core Slogans**
 
 Perhaps the most potent rhetorical device employed in the OBBBA's promotional campaign was the framing of several new tax deductions as complete tax eliminations. The slogans "No Tax on Tips," "No Tax on Overtime," and, by extension, "No Tax on Social Security" became central pillars of the messaging from the White House and the President himself.3
@@ -119,6 +121,8 @@ Beyond the aggregate fiscal impact, the most critical question for evaluating th
 The analysis concludes that the law's effects "will not be evenly distributed among households".26 In general, the CBO estimates that "resources will decrease for households toward the bottom of the income distribution, whereas resources will increase for households in the middle and toward the top of the income distribution".26
 
 The following table, constructed from the CBO's detailed projections, provides the core data behind this conclusion. It shows the average annual change in household resources over the 2026-2034 period, broken down by income decile. Crucially, it separates the impact of tax and cash transfer changes from the impact of changes to in-kind benefits like Medicaid and SNAP, revealing the mechanism behind the disparate outcomes.
+
+![Projected Average Tax Change by Income Group](ProjectedAverageTaxChange.png)
 
 **Table: Average Annual Change in Household Resources by Income Decile (2026-2034), P.L. 119-21**
 
