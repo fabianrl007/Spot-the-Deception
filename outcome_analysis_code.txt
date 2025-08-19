@@ -1,0 +1,82 @@
+# Step 1: Setup
+# ---------------------------------
+# We'll use pandas for data handling and matplotlib for plotting.
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import io
+
+# Step 2: Load the "Outcome" Data
+# ---------------------------------------
+# This is the crucial step. Here, I'm using representative data based on
+# the Tax Policy Center's analysis of the 2017 TCJA for the year 2025.
+# Your task is to find a real CBO or TPC report and replace this with
+# the exact data from its tables.
+
+# Data shows the projected average tax change in dollars for each income quintile.
+outcome_data_csv = """income_group,average_tax_change_usd
+Lowest Quintile,-60
+Second Quintile,-490
+Middle Quintile,-1030
+Fourth Quintile,-1980
+Top Quintile,-8470
+Top 1%,-61090
+"""
+
+# Read the data into a pandas DataFrame
+df_outcome = pd.read_csv(io.StringIO(outcome_data_csv))
+
+# Step 3: Prepare and Clean the Data
+# ------------------------------------
+# The data is already clean, but this is where you would handle any
+# necessary data type conversions or cleaning if you were loading a raw file.
+# For example, ensuring the 'average_tax_change_usd' is a numeric type.
+df_outcome['average_tax_change_usd'] = pd.to_numeric(df_outcome['average_tax_change_usd'])
+
+
+# Step 4: Generate the "Quantitative Verdict" Visualization
+# -----------------------------------------------------------
+# This is the bar chart that will serve as the "reality" check against the
+# "rhetoric" word cloud. It clearly shows who benefits the most in dollar terms.
+
+plt.style.use('seaborn-v0_8-whitegrid') # Use a clean grid style for the plot
+
+fig, ax = plt.subplots(figsize=(10, 7))
+
+# Create the horizontal bar chart
+bars = ax.barh(
+    df_outcome['income_group'],
+    df_outcome['average_tax_change_usd'],
+    color='firebrick'
+)
+
+# Invert y-axis to have the highest income group at the top
+ax.invert_yaxis()
+
+# Set titles and labels for clarity
+ax.set_title('Projected Average Tax Change by Income Group (2025)', fontsize=16, pad=20)
+ax.set_xlabel('Average Change in After-Tax Income (US Dollars)', fontsize=12)
+ax.set_ylabel('Income Group', fontsize=12)
+
+# Add data labels to each bar for precise reading
+for bar in bars:
+    width = bar.get_width()
+    label_text = f'${width:,.0f}'
+    ax.text(width + (max(df_outcome['average_tax_change_usd']) * 0.02), # Position label slightly outside the bar
+            bar.get_y() + bar.get_height()/2,
+            label_text,
+            va='center',
+            ha='left',
+            fontsize=10)
+
+# Add a vertical line at zero to clearly distinguish cuts from increases
+ax.axvline(0, color='black', linewidth=0.8)
+
+# Add a source attribution
+plt.figtext(0.1, 0.01, 'Source: Representative data based on Tax Policy Center analysis of the 2017 TCJA.',
+            ha="left", fontsize=8, color='gray')
+
+
+# Adjust layout and display the plot
+plt.tight_layout(rect=[0, 0.03, 1, 0.95]) # Adjust layout to make space for title and source
+plt.show()
