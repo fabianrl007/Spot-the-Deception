@@ -1,10 +1,12 @@
 # **Rhetoric vs. Reality: A Data-Driven Analysis of the "One Big Beautiful Bill Act of 2025"**
 
+ **Objective:** To analyze the disconnect between the political rhetoric used to promote a major tax law and the data-driven reality of its financial impact.
+
 ## **Introduction: The Promise of a "Big, Beautiful" Future**
 
 On July 4, 2025, President Donald J. Trump signed into law the "One Big Beautiful Bill Act" (OBBBA), a sweeping piece of legislation that reshaped vast segments of the U.S. economy and federal budget.1 The bill was presented to the American public not merely as a set of fiscal adjustments, but as a landmark achievement of historic proportions. In the words of its chief proponent, it was "arguably the most significant piece of Legislation that will ever be signed in the History of our Country\!".3 This grand pronouncement was accompanied by a clear and potent narrative: the OBBBA was designed to deliver "MASSIVE Tax CUTS" and was heralded by the White House as the "largest tax cut in history for middle- and working-class Americans".3
 
-This official narrative, built on promises of bigger paychecks, tax-free income for tipped and overtime workers, and a restoration of "fiscal sanity," formed the basis of the law's public appeal.4 It painted a picture of broad-based prosperity, economic revitalization, and a government putting "America First".3 This report undertakes a rigorous, data-driven examination of that narrative.
+This official narrative, built on promises of bigger paychecks, tax-free income for tipped and overtime workers, and a restoration of "fiscal sanity," formed the basis of the law's public appeal.4 It painted a picture of broad-based prosperity, economic revitalization, and a government putting "America First.".3 This report undertakes a rigorous, data-driven examination of that narrative.
 
 The central purpose of this analysis is to test the claims made by the OBBBA's proponents against the empirical, non-partisan projections of the law's actual impact. It seeks to answer a fundamental question at the heart of public policy discourse: Do the quantitative analyses of the OBBBA's effects, as calculated by official bodies like the Congressional Budget Office (CBO) and the Joint Committee on Taxation (JCT), align with the rhetoric used to promote it?
 
@@ -12,7 +14,7 @@ To answer this question, this report will proceed in four distinct stages. First
 
 ## **Section 1: The Architecture of Persuasion: Analyzing the OBBBA's Promotional Language**
 
-The passage of the "One Big Beautiful Bill Act" was preceded and accompanied by a disciplined and highly effective communication strategy. This strategy, led by the executive branch and amplified by legislative leaders, was designed to frame the complex, multi-faceted legislation in simple, positive, and broadly appealing terms. An analysis of the public statements reveals a carefully constructed narrative focused on direct benefits to sympathetic voter blocs, economic patriotism, and a clear contrast with political opponents.
+The passage of the "One Big Beautiful Bill Act" was preceded and accompanied by a disciplined and highly effective communication strategy. This strategy, led by the executive branch and amplified by legislative leaders, was designed to frame the complex, multifaceted legislation in simple, positive, and broadly appealing terms. An analysis of the public statements reveals a carefully constructed narrative focused on direct benefits to sympathetic voter blocs, economic patriotism, and a clear contrast with political opponents.
 
 ### **1.1 Identifying the Key Proponents and Their Core Message**
 
@@ -238,3 +240,8 @@ Ultimately, this report affirms the power and necessity of data journalism. It i
 34. The CBO Confirms the Devastating Harms of House Republicans' One Big 'Beautiful' Bill Act, accessed August 14, 2025, [https://www.americanprogress.org/article/the-cbo-confirms-the-devastating-harms-of-house-republicans-one-big-beautiful-bill-act/](https://www.americanprogress.org/article/the-cbo-confirms-the-devastating-harms-of-house-republicans-one-big-beautiful-bill-act/)  
 35. New CBO Health Coverage Estimates of Budget Reconciliation Law, accessed August 14, 2025, [https://ccf.georgetown.edu/2025/08/14/new-cbo-health-coverage-estimates-of-budget-reconciliation-law/](https://ccf.georgetown.edu/2025/08/14/new-cbo-health-coverage-estimates-of-budget-reconciliation-law/)  
 36. US labour market data: Applications for jobless claims dip slightly; range below economists' forecast, accessed August 14, 2025, [https://timesofindia.indiatimes.com/business/international-business/us-labour-market-data-applications-for-jobless-claims-dip-slightly-range-below-economists-forecast/articleshow/123305586.cms](https://timesofindia.indiatimes.com/business/international-business/us-labour-market-data-applications-for-jobless-claims-dip-slightly-range-below-economists-forecast/articleshow/123305586.cms)
+
+## Tools Used
+* **Data Analysis:** Python, Pandas
+* **Data Visualization:** Matplotlib
+* **Version Control:** Git, GitHub
